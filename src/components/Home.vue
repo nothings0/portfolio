@@ -22,9 +22,9 @@
       </div>
     </div>
     <div
-      class="absolute top-2/4 left-2/4 translate-x-[-50%] translate-y-[-50%] z-10 md:w-[40%]"
+      class="absolute top-2/4 left-2/4 translate-x-[-50%] translate-y-[-50%] z-10 md:w-[40%] md:relative md:top-0 md:left-0 md:translate-x-0 md:translate-y-0"
     >
-      <img src="../assets/img.svg" alt="" class="opacity-50" />
+      <img src="../assets/img.svg" alt="" class="opacity-50 md:opacity-100" />
     </div>
   </div>
 </template>

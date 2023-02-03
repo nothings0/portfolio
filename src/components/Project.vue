@@ -12,16 +12,18 @@
           {{ project.description }}
         </p>
         <div class="flex gap-x-4">
-          <div
+          <a
+            :href="project.demo"
             class="text-base text-white bg-[#1876d2] px-4 py-2 rounded-lg cursor-pointer"
           >
             Demo
-          </div>
-          <div
+          </a>
+          <a
+            :href="project.github"
             class="text-base text-white bg-[#1b222b] px-4 py-2 rounded-lg cursor-pointer"
           >
             Github
-          </div>
+          </a>
         </div>
       </div>
       <div class="w-full md:w-1/2 border-8 border-zinc-900 rounded-xl">
@@ -38,7 +40,7 @@ export default {
   setup() {
     const data = ref([]);
     const getData = async () => {
-      const res = await axios.get("http://portfolioapi.fluxquiz.com");
+      const res = await axios.get("http://localhost:3000/project");
       data.value = res.data.data;
     };
     getData();

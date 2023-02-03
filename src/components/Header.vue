@@ -4,7 +4,7 @@
     :class="[shrink ? 'shrink' : '']"
   >
     <div
-      class="md:hidden"
+      class="md:hidden cursor-pointer"
       :class="[isActive ? 'invisible' : '']"
       @click="handleMenu"
     >
@@ -16,7 +16,7 @@
         class="hidden md:flex md:items-center md:gap-x-4 lg:gap-x-10 text-lg mr-4"
       >
         <a href="/">Home</a>
-        <a href="#blog">Blog</a>
+        <a href="#skill">Skill</a>
         <a href="#project">Project</a>
       </div>
       <div class="hidden md:flex md:items-center md:gap-x-3">
@@ -47,8 +47,8 @@
     </div>
 
     <div
-      :class="[isActive ? 'translate-x-0' : 'hidden']"
-      class="absolute top-0 left-0 translate-x-[-100%] p-10 flex flex-col gap-y-8 bg-[#121212E6] w-4/6 h-screen transition ease-in-out md:hidden"
+      :class="[isActive ? 'translate-x-0' : 'translate-x-[-100%]']"
+      class="absolute top-0 left-0 p-10 flex flex-col gap-y-8 bg-[#121212E6] w-4/6 h-screen transition ease-in-out md:hidden"
     >
       <div class="flex items-center justify-between md:hidden">
         <span class="text-xl font-medium">LOGO</span
